@@ -10,16 +10,16 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
         with:
-          node-version: "12.3.0"
+          node-version: "12.13.0"
           registry-url: https://registry.npmjs.org
-      - name: npm install, lint, build, and test
+      - name: npm install and test
         run: |
           npm install
           npm run test
       # publish when builds pass on the master branch
       - uses: actions/setup-node@v1
         with:
-          node-version: "12.3.0"
+          node-version: "12.13.0"
           registry-url: https://npm.pkg.github.com
       - name: publish
         if: contains(github.ref, 'main')
