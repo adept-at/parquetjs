@@ -12,7 +12,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/ironSource/parquetjs.git"
+    "url": "git://github.com/adept-at/parquetjs.git"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
